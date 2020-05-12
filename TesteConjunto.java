@@ -22,13 +22,16 @@ public class TesteConjunto {
 	
 	public static void main(String [] args) {
 		
-		Set<String> conjunto1 = new HashSet<>();		
+		Set<String> conjunto1 = new HashSet<>();	
 		
-		conjunto1.add("Gerente");
+		OrdemDeUmSet os = new OrdemDeUmSet();
+		
+		conjunto1.add("Analista");
 		conjunto1.add("Diretor");
 		conjunto1.add("Presidente");
 		conjunto1.add("Secretaria");
 		conjunto1.add("Funcionario");
+		conjunto1.add("Gerente");
 		conjunto1.add("Diretor"); // repetido portanto retorna falso
 		
 				
@@ -36,7 +39,9 @@ public class TesteConjunto {
 		
 		System.out.println(conjunto1);
 		
+		os.criarConjunto();
 		
+		os.criarConjuntoConta();
 		
 	}
 	
